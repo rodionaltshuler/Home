@@ -7,12 +7,12 @@ admin.initializeApp({
     databaseURL: "https://home-cfdcd.firebaseio.com"
 });
 
-const todayFormatted = dateFormatted(new Date());
 
 const dht = require('./sensors/dht');
 
 if (dht.initialize()) {
     dht.read((temperature, humidity) => {
+        const todayFormatted = dateFormatted(new Date());
         admin.database().ref("/weather/" + todayFormatted + '/' + Date.now()).set({
             temperature,
             humidity
