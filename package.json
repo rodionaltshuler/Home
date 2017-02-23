@@ -1,0 +1,12 @@
+{
+  "name": "Home",
+  "version": "1.0.0",
+  "description": "Smart home",
+  "dependencies": {
+    "firebase": "3.6.10",
+    "firebase-admin": "4.1.1"
+  },
+  "scripts": {
+    "start": "./start.sh"
+  }
+}
