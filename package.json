@@ -4,7 +4,8 @@
   "description": "Smart home",
   "dependencies": {
     "firebase": "3.6.10",
-    "firebase-admin": "4.1.1"
+    "firebase-admin": "4.1.1",
+    "node-dht-sensor": "0.0.32"
   },
   "scripts": {
     "start": "./start.sh"
